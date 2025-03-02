@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1>📖 Kunal's Research Blog</h1>
+<p>Insights on AI, security, and research.</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <small>📅 {{ post.date | date: "%B %d, %Y" }} | 🏷️ Categories: {{ post.categories | join: ", " }}</small>
+      <p>{{ post.excerpt }} <a href="{{ post.url }}">Read more →</a></p>
+    </li>
+  {% endfor %}
+</ul>
