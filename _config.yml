@@ -1,11 +1,10 @@
-# Site Settings
-title: "Kunal's Research Blog"
-description: "Sharing insights on AI, security, and research."
-url: "https://kunal-crl-bel.github.io"
-baseurl: ""  # Keep blank unless using a subpath
 
-# Theme & Plugins
-remote_theme: "mmistakes/minimal-mistakes"  # Only use this for GitHub Pages
+
+remote_theme: mmistakes/minimal-mistakes
+title: "Kunal's Research Blog"
+description: "Research and insights on cybersecurity, AI, and more."
+
+
 
 plugins:
   - jekyll-remote-theme
