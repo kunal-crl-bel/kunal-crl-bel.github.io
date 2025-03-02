@@ -5,9 +5,7 @@ url: "https://kunal-crl-bel.github.io"
 baseurl: ""  # Keep blank unless using a subpath
 
 # Theme & Plugins
-remote_theme: "mmistakes/minimal-mistakes"
-theme: "minimal-mistakes-jekyll"  # Ensure compatibility with local builds
-minimal_mistakes_skin: "default"  # Ensures correct styling
+remote_theme: "mmistakes/minimal-mistakes"  # Only use this for GitHub Pages
 
 plugins:
   - jekyll-remote-theme
@@ -16,7 +14,7 @@ plugins:
   - jekyll-archives
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-include-cache  # Fixes 'include_cached' error
+  - jekyll-include-cache
 
 # Pagination & Blog URLs
 paginate: 5
@@ -33,15 +31,11 @@ defaults:
       author_profile: true
 
 # Navigation Links
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "Blog"
-    url: "/blog/"
-  - title: "About"
-    url: "/about/"
-  - title: "Contact"
-    url: "/contact/"
+nav_links:
+  Home: "/"
+  Blog: "/blog/"
+  About: "/about/"
+  Contact: "/contact/"
 
 # SEO & Google Analytics
 google_analytics: "G-F7V6NTL8CS"
