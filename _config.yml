@@ -1,8 +1,56 @@
+# Site Settings
+title: "Kunal's Research Blog"
+description: "Sharing insights on AI, security, and research."
+url: "https://kunal-crl-bel.github.io"
+baseurl: ""  # Leave blank unless using a subpath
+
+# Theme & Plugins
 remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
-title: "Kunal's Research Blog"
+  - jekyll-archives
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-include-cache  # Prevents 'include_cached' errors
+
+# Permalink Structure
 permalink: /blog/:title/
-description: "Sharing insights on AI, security, and research."
+
+# Pagination (Enable If Needed)
+paginate: 7
+paginate_path: "/blog/page:num/"
+
+# Default Metadata
+author:
+  name: "Kunal"
+  # twitter: "your_twitter_handle"  # Remove if not needed
+  # linkedin: "your_linkedin_handle"  # Remove if not needed
+
+# Navigation Links (Edit as Needed)
+nav_links:
+  Home: "/"
+  Blog: "/blog/"
+  About: "/about/"
+  Contact: "/contact/"
+
+# SEO Settings
+google_analytics: "G-F7V6NTL8CS"
+# twitter_username: "your_twitter_handle"
+github_username: "kunal-crl-bel"
+
+# Enable Blog Features
+show_excerpts: true
+excerpt_separator: <!--more-->
+include_cached: false  # Prevents errors with GitHub Pages
+
+# Enable Archive Pages
+jekyll-archives:
+  enabled: 
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    category: "/categories/:name/"
+    tag: "/tags/:name/"
