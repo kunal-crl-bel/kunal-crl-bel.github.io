@@ -3,4 +3,5 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 title: "Kunal's Research Blog"
+permalink: /blog/:title/
 description: "Sharing insights on AI, security, and research."
