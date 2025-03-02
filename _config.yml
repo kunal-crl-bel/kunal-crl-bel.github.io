@@ -1,4 +1,4 @@
-remote_theme: jekyll/minima
+remote_theme: "beautiful-jekyll/beautiful-jekyll"
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
