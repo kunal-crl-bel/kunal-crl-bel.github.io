@@ -1,13 +1,8 @@
 ---
 layout: home
 title: "Kunal's Research Blog"
-permalink: /
+excerpt: "Sharing insights on AI, security, and research."
+pagination: true
 ---
-Welcome to my research blog! Here, I share insights on **AI, security, and research**.  
 
-📖 **Latest Posts:**  
-{% for post in paginator.posts %}
-- [{{ post.title }}]({{ post.url }})
-{% endfor %}
-
-🚀 Stay tuned for more updates!
+Welcome to my blog! Here, I share my research on AI, cybersecurity, and more.
