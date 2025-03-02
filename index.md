@@ -1,11 +1,13 @@
 ---
 layout: home
-title: "Welcome to Kunal's Research Blog"
-description: "Exploring AI, Security, and Research."
+title: "Kunal's Research Blog"
+permalink: /
 ---
+Welcome to my research blog! Here, I share insights on **AI, security, and research**.  
 
-## 📢 Latest Research Articles  
-Stay updated with cutting-edge research on AI and cybersecurity.
+📖 **Latest Posts:**  
+{% for post in paginator.posts %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
 
-📝 [Read My Blog Posts](./blog/)
-
+🚀 Stay tuned for more updates!
