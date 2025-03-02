@@ -2,7 +2,7 @@
 title: "Kunal's Research Blog"
 description: "Sharing insights on AI, security, and research."
 url: "https://kunal-crl-bel.github.io"
-baseurl: ""  # Leave blank unless using a subpath
+baseurl: ""  # Keep blank unless using a subpath
 
 # Theme & Plugins
 remote_theme: mmistakes/minimal-mistakes
@@ -13,42 +13,34 @@ plugins:
   - jekyll-archives
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-include-cache  # Prevents 'include_cached' errors
+  - jekyll-include-cache  # Fixes 'include_cached' error
 
-# Blog Permalinks & Pagination
+# Pagination & Blog URLs
 paginate: 5
 paginate_path: "/blog/page:num/"
 permalink: /blog/:year/:month/:day/:title/
 
-# Homepage Layout (Fixes missing main page)
+# Homepage Layout
 defaults:
   - scope:
       path: ""
     values:
       layout: home
 
-# Navigation Links (Fixing structure)
+# Navigation Links
 nav_links:
-  Home: 
-    url: "/"
-  Blog: 
-    url: "/blog/"
-  About: 
-    url: "/about/"
-  Contact: 
-    url: "/contact/"
+  Home: "/"
+  Blog: "/blog/"
+  About: "/about/"
+  Contact: "/contact/"
 
 # SEO & Google Analytics
 google_analytics: "G-F7V6NTL8CS"
 github_username: "kunal-crl-bel"
 
-# Blog Settings
-show_excerpts: true
-excerpt_separator: <!--more-->
-
-# Archive Pages
+# Archives for Categories & Tags
 jekyll-archives:
-  enabled:
+  enabled: 
     - categories
     - tags
   layout: archive
