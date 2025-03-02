@@ -1,0 +1,6 @@
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+title: "Kunal's Research Blog"
+description: "Sharing insights on AI, security, and research."
