@@ -5,7 +5,10 @@ url: "https://kunal-crl-bel.github.io"
 baseurl: ""  # Keep blank unless using a subpath
 
 # Theme & Plugins
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes"
+theme: "minimal-mistakes-jekyll"  # Ensure compatibility with local builds
+minimal_mistakes_skin: "default"  # Ensures correct styling
+
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
@@ -18,21 +21,27 @@ plugins:
 # Pagination & Blog URLs
 paginate: 5
 paginate_path: "/blog/page:num/"
-permalink: /blog/:year/:month/:day/:title/
+permalink: "/blog/:year/:month/:day/:title/"
 
 # Homepage Layout
 defaults:
   - scope:
       path: ""
+      type: "pages"
     values:
       layout: home
+      author_profile: true
 
 # Navigation Links
-nav_links:
-  Home: "/"
-  Blog: "/blog/"
-  About: "/about/"
-  Contact: "/contact/"
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "About"
+    url: "/about/"
+  - title: "Contact"
+    url: "/contact/"
 
 # SEO & Google Analytics
 google_analytics: "G-F7V6NTL8CS"
@@ -40,10 +49,10 @@ github_username: "kunal-crl-bel"
 
 # Archives for Categories & Tags
 jekyll-archives:
-  enabled: 
+  enabled:
     - categories
     - tags
-  layout: archive
+  layout: "archive"
   permalinks:
     category: "/categories/:name/"
     tag: "/tags/:name/"
