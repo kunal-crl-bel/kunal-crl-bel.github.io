@@ -1,51 +1,11 @@
-
-
 remote_theme: mmistakes/minimal-mistakes
-title: "Kunal's Research Blog"
-description: "Research and insights on cybersecurity, AI, and more."
-
-
-
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-archives
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-include-cache
-
-# Pagination & Blog URLs
-paginate: 5
-paginate_path: "/blog/page:num/"
-permalink: "/blog/:year/:month/:day/:title/"
-
-# Homepage Layout
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: home
-      author_profile: true
-
-# Navigation Links
-nav_links:
-  Home: "/"
-  Blog: "/blog/"
-  About: "/about/"
-  Contact: "/contact/"
+title: "Kunal's Research Blog"
+description: "Research and insights on cybersecurity, AI, and more."
 
 # SEO & Google Analytics
 google_analytics: "G-F7V6NTL8CS"
 github_username: "kunal-crl-bel"
-
-# Archives for Categories & Tags
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: "archive"
-  permalinks:
-    category: "/categories/:name/"
-    tag: "/tags/:name/"
