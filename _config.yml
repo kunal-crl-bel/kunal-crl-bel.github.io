@@ -18,42 +18,37 @@ plugins:
 # Blog Permalinks & Pagination
 paginate: 5
 paginate_path: "/blog/page:num/"
+permalink: /blog/:year/:month/:day/:title/
 
-permalink: /blog/:title/
-
-# Homepage Layout
+# Homepage Layout (Fixes missing main page)
 defaults:
   - scope:
       path: ""
     values:
       layout: home
-      
-# Default Metadata
-author:
-  name: "Kunal"
-  # twitter: "your_twitter_handle"  # Remove if not needed
-  # linkedin: "your_linkedin_handle"  # Remove if not needed
 
-# Navigation Links (Edit as Needed)
+# Navigation Links (Fixing structure)
 nav_links:
-  Home: "/"
-  Blog: "/blog/"
-  About: "/about/"
-  Contact: "/contact/"
+  Home: 
+    url: "/"
+  Blog: 
+    url: "/blog/"
+  About: 
+    url: "/about/"
+  Contact: 
+    url: "/contact/"
 
-# SEO Settings
+# SEO & Google Analytics
 google_analytics: "G-F7V6NTL8CS"
-# twitter_username: "your_twitter_handle"
 github_username: "kunal-crl-bel"
 
-# Enable Blog Features
+# Blog Settings
 show_excerpts: true
 excerpt_separator: <!--more-->
-include_cached: false  # Prevents errors with GitHub Pages
 
-# Enable Archive Pages
+# Archive Pages
 jekyll-archives:
-  enabled: 
+  enabled:
     - categories
     - tags
   layout: archive
